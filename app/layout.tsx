@@ -1,0 +1,4 @@
+import type { Metadata } from "next";
+import "./globals.css";
+export const metadata: Metadata = { title: "Bruno Tomé — Engineering with intent", description: "Portfolio of Bruno Tomé Rosa, computer engineer and technology leader building products where strong systems meet real human needs.", openGraph: { title: "Bruno Tomé — Engineering with intent", description: "Computer engineer, technology leader, and builder of useful systems.", type: "website" }, twitter: { card: "summary_large_image", title: "Bruno Tomé — Engineering with intent", description: "Computer engineer, technology leader, and builder of useful systems." }, other: { "codex-preview": "development" }, icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" } };
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) { return <html lang="en"><body>{children}</body></html>; }
